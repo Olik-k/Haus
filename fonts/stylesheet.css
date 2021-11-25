@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Liberation Serif';
+    src: url('LiberationSerif-Regular.eot');
+    src: url('LiberationSerif-Regular.eot?#iefix') format('embedded-opentype'),
+        url('LiberationSerif-Regular.woff2') format('woff2'),
+        url('LiberationSerif-Regular.woff') format('woff'),
+        url('LiberationSerif-Regular.ttf') format('truetype'),
+        url('LiberationSerif-Regular.svg#LiberationSerif-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
