@@ -5,8 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="normalize_fontsstyle.css">
   <link rel="stylesheet" href="style.css">
   <title>Haus</title>
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"> 
 </head>
 <body>
   <div class="wrapper">
@@ -47,6 +49,25 @@
       </div>
     </header>
     <main>
+      <div class="car_none">
+        <div class=car>
+          <div class="carousel" data-flickity>
+            <div class="carousel-cell">
+              <p class="block1__p">"What makes Haus so special is its incredible flavors."</p>
+              <img class="block1__img" src="img/logo/title1.png" alt="title">
+            </div>
+            <div class="carousel-cell">
+              <p class="block1__p block1__p2">“For the wine or cocktail lover who’s tried it all and wants something new
+                and refreshing.”</p>
+            <img class="block1__img block1__img2" src="img/logo/title2.png" alt="title">
+            </div>
+            <div class="carousel-cell">
+              <p class="block1__p">“Cleaner, responsibly sourced, and lower in alcohol.”</p>
+              <img class="block1__img" src="img/logo/title3.png" alt="title">
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="block1">
         <ul class="block1__ul">
           <li class="block1__li">
@@ -63,9 +84,9 @@
             <img class="block1__img" src="img/logo/title3.png" alt="title">
           </li>
         </ul>
-        <div class="line _container"></div>
       </div>
       <div class="block2 _container">
+        <div class="line block2__line"></div>
         <div class="block2__heading">
           <h2 class="block2__h2">Made with natural ingredients, nothing fake</h2>
         </div>
@@ -186,9 +207,9 @@
           <div class="block9__spotify2">
             <p class="block9__text2">Follow us, share us, drink Ha(us)</p>
             <div class="block9__socials">
-              <a class="block9__social" href="https://www.instagram.com/drinkhaus/">Instagram</a>
-              <a class="block9__social" href="https://twitter.com/drinkhaus?lang=en">Twitter</a>
-              <a class="block9__social" href="https://www.facebook.com/haus/">Facebook</a>
+              <a class="block9__social" href="https://www.instagram.com/drinkhaus/" target="_blank">Instagram</a>
+              <a class="block9__social" href="https://twitter.com/drinkhaus?lang=en" target="_blank">Twitter</a>
+              <a class="block9__social" href="https://www.facebook.com/haus/" target="_blank">Facebook</a>
             </div>
           </div>
         </div>
@@ -202,40 +223,70 @@
             <p class="block10__text">Let's be friends. Subscribe to our newsletter to receive updates on new launches,
               recipes, playlists, and more.</p>
             <form action="#" method="post">
-              <input type="email" name="email-address" placeholder="YOUR EMAIL ADDRESS">
+              <input type="email" name="email-address" placeholder="YOUR EMAIL ADDRESS" required>
               <button class="block10__button">Submit</button>
             </form>
           </div>
           <div class="block11">
             <ul class="block11__ul">
               <li class="block11__item">Explore</li>
-              <li class="block11__li"><a class="block11__a" href="#">Home</a></li>
-              <li class="block11__li"><a class="block11__a" href="#">Shop</a></li>
-              <li class="block11__li"><a class="block11__a" href="#">Membership</a></li>
-              <li class="block11__li"><a class="block11__a" href="#">Our Story</a></li>
-              <li class="block11__li"><a class="block11__a" href="#">FAQ</a></li>
-              <li class="block11__li"><a class="block11__a" href="#">Refer a Friend</a></li>
-              <li class="block11__li"><a class="block11__a" href="#">Corporate Gifting</a></li>
-              <li class="block11__li"><a class="block11__a" href="#">Gift Card</a></li>
+              <li class="block11__li">
+                <a class="block11__a" href="#">Home</a>
+              </li>
+              <li class="block11__li">
+                <a class="block11__a" href="#">Shop</a>
+              </li>
+              <li class="block11__li">
+                <a class="block11__a" href="#">Membership</a>
+              </li>
+              <li class="block11__li">
+                <a class="block11__a" href="#">Our Story</a>
+              </li>
+              <li class="block11__li">
+                <a class="block11__a" href="#">FAQ</a>
+              </li>
+              <li class="block11__li">
+                <a class="block11__a" href="#">Refer a Friend</a>
+              </li>
+              <li class="block11__li">
+                <a class="block11__a" href="#">Corporate Gifting</a>
+              </li>
+              <li class="block11__li">
+                <a class="block11__a" href="#">Gift Card</a>
+              </li>
             </ul>
             <ul class="block11__ul">
               <li class="block11__item">Follow</li>
-              <li class="block11__li"><a class="block11__a" href="https://www.instagram.com/drinkhaus/">Instagram</a>
+              <li class="block11__li">
+                <a class="block11__a" href="https://www.instagram.com/drinkhaus/" target="_blank">Instagram</a>
               </li>
-              <li class="block11__li"><a class="block11__a"
-                  href="https://open.spotify.com/user/e3aijvxqvzulxyy2khb1ridxw?si=emc6J1dNQqelQKgS7RISsA&nd=1">Spotify</a>
+              <li class="block11__li">
+                <a class="block11__a"
+                  href="https://open.spotify.com/user/e3aijvxqvzulxyy2khb1ridxw?si=emc6J1dNQqelQKgS7RISsA&nd=1" target="_blank">Spotify</a>
               </li>
-              <li class="block11__li"><a class="block11__a" href="https://twitter.com/drinkhaus?lang=en">Twitter</a>
+              <li class="block11__li">
+                <a class="block11__a" href="https://twitter.com/drinkhaus?lang=en" target="_blank">Twitter</a>
               </li>
-              <li class="block11__li"><a class="block11__a" href="https://www.facebook.com/haus/">Facebook</a></li>
+              <li class="block11__li">
+                <a class="block11__a" href="https://www.facebook.com/haus/" target="_blank">Facebook</a></li>
             </ul>
             <ul class="block11__ul">
               <li class="block11__item">Drop Us a Line</li>
-              <li class="block11__li"><a class="block11__a" href="#">hello@drink.haus</a></li>
-              <li class="block11__li"><a class="block11__a" href="#">press@drink.haus</a></li>
-              <li class="block11__li"><a class="block11__a" href="#">partnerships@drink.haus</a></li>
-              <li class="block11__li"><a class="block11__a" href="#">jobs@drink.haus</a></li>
-              <li class="block11__li"><a class="block11__a" href="#">wholesale@drink.haus</a></li>
+              <li class="block11__li">
+                <a class="block11__a" href="mailto:hello@drink.haus" target="_blank">hello@drink.haus</a>
+              </li>
+              <li class="block11__li">
+                <a class="block11__a" href="mailto:press@drink.haus" target="_blank">press@drink.haus</a>
+              </li>
+              <li class="block11__li">
+                <a class="block11__a" href="mailto:partnerships@drink.haus" target="_blank">partnerships@drink.haus</a>
+              </li>
+              <li class="block11__li">
+                <a class="block11__a" href="mailto:obs@drink.haus" target="_blank">jobs@drink.haus</a>
+              </li>
+              <li class="block11__li">
+                <a class="block11__a" href="mailto:wholesale@drink.haus" target="_blank">wholesale@drink.haus</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -251,5 +302,6 @@
     </footer>
   </div>
   <script type="text/javascript" src="script.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 </html>
